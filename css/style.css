@@ -1,5 +1,33 @@
-.bioContainer{
-    margin: auto;
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    border: 1px solid black;
+}
+    
+.header {
+    grid-column: span 8 / span 8;
+    /* justify-self: center; */
+    border: 1px solid red;
+}
+
+.sidebar {
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+}
+
+.bioContainer {
+    grid-column: span 7 / span 7;
+    grid-row: span 5 / span 5;
+    grid-row-start: 2;
+}
+        
+/* end of gridding */
+
+img{
+    align-items: center;
+    height: 60px;
 }
 
 .ket, .isi{
