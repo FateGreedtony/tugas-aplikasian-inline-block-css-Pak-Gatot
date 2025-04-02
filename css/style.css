@@ -1,3 +1,4 @@
+/* start of gridding */
 .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -23,7 +24,6 @@
     grid-row: span 5 / span 5;
     grid-row-start: 2;
 }
-        
 /* end of gridding */
 
 img{
@@ -31,23 +31,23 @@ img{
     height: 60px;
 }
 
+/* start of tugas */
 .ket, .isi{
     display: inline-block;
     outline: 1px solid black;
     padding: 2px;
 }
+/* end of tugas */
 
 div.ket{
     width: 150px;
     background-color: lightgreen;
-    /* padding: 10px; */
     text-align: left;
 }
 
 div.isi{
     width: calc(100% - 950px);
     background-color: lightgoldenrodyellow;
-    /* padding: 10px; */
     text-align: left;
 }
 
